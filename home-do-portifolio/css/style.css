@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+  animation: gg 15s ease infinite;
+    background: linear-gradient(-5deg, #ff7752, #e73c7e, #23d6d5, #00d5ab) no-repeat;
+    background-size:1000% 10000%;
+}
+.cabeca{
+  position: relative;
+  margin: auto;
+  float: right;
+}
+#menu-h{
+  background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+  max-width: 100vw;
+  list-style: none;
+  padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:first-child a {
+    
+    background-color: rgb(24, 139, 233);
+}
+
+.dd{
+    margin-top: 60px;
+    display: block;
+    position: absolute;
+    border: 0px blue solid;
+    height: 100vh;
+    width: 100vw;
+    white-space: nowrap;
+    
+}
+
+@keyframes gg {
+ 0%{
+    background-position: 0 50%;
+ }
+ 
+ 50%{
+    background-position: 100% 50%;
+ }
+
+ 100%{
+    background-position: 0 50%;
+ }
+}
+img{
+  height: 660px;
+  width: 298px;
+  display: block;
+}
+h1{
+  display: block;
+  margin-left:298px;
+  margin-top: -650px;
+  position: relative;
+}
+p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 26pt;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60vw;
+  animation: type 5s steps(60, end) ; 
+}
+
+p:nth-child(2){
+  animation: type2 9s steps(60, end);
+  
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 90; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+/*CSS media query dentro de um stylesheet*/
+@media (max-width: 1000px)
+{
+  img{
+    
+   }
+   .google{
+    font-size: 15pt;
+    margin-left: -50px;
+   }
+   }
