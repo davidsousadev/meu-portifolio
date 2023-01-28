@@ -75,6 +75,15 @@ img{
   height: 660px;
   width: 298px;
   display: block;
+  animation: imagem 7s ease forwards;
+}
+@keyframes imagem {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 h1{
   display: block;
