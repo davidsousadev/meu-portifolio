@@ -5,11 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    
 }
 body{
-  animation: gg 15s ease infinite;
-    background: linear-gradient(-5deg, #ff7752, #e73c7e, #084343, #206a5b) no-repeat;
-    background-size:10000% 10000%;
+    overflow: hidden;
+    animation: gge 15s ease infinite;
+    background: linear-gradient(-5deg,  #0a59ed, #d16b3f, #250d06, #2a12c5) no-repeat;
+   background-size:1000vw 1000vh;
+    
+
 }
 .cabeca{
   position: relative;
@@ -107,14 +111,6 @@ h1{
 .and{
   animation: blink 1s infinite;
 }
-.sobre{
-  color: lime; 
-  font-family: "Courier";
-  font-size: 26pt;
-  white-space: nowrap;
-  overflow: hidden;
-  
-}
 @keyframes type{ 
   from { width: 0; } 
 } 
@@ -132,6 +128,58 @@ h1{
 ::selection{
   background: black;
 }
+
+.sobre{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 26pt;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: sobre 7s ease forwards;
+}
+
+@keyframes sobre {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.proximo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.proximo a{
+  text-decoration: none;
+  font-size: 150pt;
+  color: lime;
+  animation: prox 20s ease forwards;
+}
+@keyframes prox {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#formacao{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1300px;
+  margin-left: 45%;
+  rotate: 50;
+}
+
 
 /*CSS media query dentro de um stylesheet*/
 @media (max-width: 1000px)
