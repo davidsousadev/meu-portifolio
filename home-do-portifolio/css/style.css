@@ -8,8 +8,8 @@
 }
 body{
   animation: gg 15s ease infinite;
-    background: linear-gradient(-5deg, #ff7752, #e73c7e, #23d6d5, #00d5ab) no-repeat;
-    background-size:1000% 10000%;
+    background: linear-gradient(-5deg, #ff7752, #e73c7e, #084343, #206a5b) no-repeat;
+    background-size:10000% 10000%;
 }
 .cabeca{
   position: relative;
@@ -35,7 +35,6 @@ body{
     padding: 20px;
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
 }
 
 #menu-h ul li a:hover {
@@ -91,7 +90,7 @@ h1{
   margin-top: -650px;
   position: relative;
 }
-p{
+.google{
   color: lime; 
   font-family: "Courier";
   font-size: 26pt;
@@ -101,20 +100,21 @@ p{
   animation: type 5s steps(60, end) ; 
 }
 
-p:nth-child(2){
+.google:nth-child(2){
   animation: type2 9s steps(60, end);
   
 }
-
-p a{
-  color: lime;
-  text-decoration: none;
-}
-
-span{
+.and{
   animation: blink 1s infinite;
 }
-
+.sobre{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 26pt;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
 @keyframes type{ 
   from { width: 0; } 
 } 
