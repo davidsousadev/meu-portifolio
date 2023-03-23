@@ -54,7 +54,6 @@ body{
     margin-top: 60px;
     display: block;
     position: absolute;
-    /*border: 10px solid #ce1e1e;*/
     height: 100vh;
     width: 100vw;
     white-space: nowrap;
@@ -95,7 +94,6 @@ h1{
   position: relative;
 }
 .google{
-  border: 1px blue solid;
   color: lime; 
   font-family: "Courier";
   font-size: 26pt;

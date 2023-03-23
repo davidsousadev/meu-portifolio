@@ -1,0 +1,80 @@
+body{
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+.porti{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img{
+   
+   
+}
+.navega{
+    left: 50%;
+    bottom: 20px;
+    position: absolute;
+    display:flex; 
+    transform: translate(-50%); 
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .s1{
+    margin-left: -80%;
+}
