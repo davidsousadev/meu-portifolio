@@ -29,7 +29,7 @@ img{
 .bar{
     width: 70px;
     height: 17px;
-    border: 2px solid #fff;
+    border: 2px solid  #2a12c5;
     margin: 6px;
     border-radius: 5px;
     cursor: pointer;
@@ -37,7 +37,7 @@ img{
 }
 
 .bar:hover{
-    background: #fff;
+    background:  #2a12c5;
 }
 
 input{
