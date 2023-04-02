@@ -94,6 +94,7 @@ h1{
   position: relative;
 }
 .google{
+  position: relative;
   color: lime; 
   font-family: "Courier";
   font-size: 26pt;
@@ -131,11 +132,78 @@ h1{
 /*CSS media query dentro de um stylesheet*/
 @media (max-width: 1000px)
 {
-  img{
-    
-   }
+ .dd img{
+  height: 460px;
+  width: 98px;
+  display: block;
+  animation: imagem 7s ease forwards;
+}
    .google{
+    border: #0a59ed 1px solid;
     font-size: 15pt;
-    margin-left: -50px;
+    margin-left: -40px;
    }
+   h1{
+  display: block;
+  margin-left:298px;
+  margin-top: -400px;
+  position: absolute;
+}
    }
+
+
+.skils{
+  display: inline-block;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: 15%;
+}
+.skils img{
+  width: 100px;
+  height: 100px;
+}
+#cssicon{
+  width: 130px;
+  height: 119px;
+  padding: 0;
+  margin-top: 0px;
+  position: relative;
+}
+
+#phpicon{
+  width: 115px;
+  height: 119px;
+  padding: 0;
+  margin-top: 0px;
+  position: relative;
+}
+
+#sqlicon{
+  width: 115px;
+  height: 100px;
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.soft{
+  display: inline-block;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: 30%;
+}
+
+.soft img{
+  width: 100px;
+  height: 100px;
+}
+
+#python{
+  margin-left: -20px;
+}
+
+#android{
+  margin-right: 3px;
+  margin-left: 22px;
+}
