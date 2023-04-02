@@ -33,10 +33,30 @@ const loop = setInterval(() =>{
 
         clearInterval(loop);
 
-    
-    
+myMusic.pause();
+   over.play(); 
+
+   setTimeout(function(){
+   window.location.reload();
+}, 10000);
+
     }
     
     }, 10);
 
+var myMusic = document.getElementById("music");
+var over = document.getElementById("over");
+function play() {
+
+myMusic.play();
+
+}
+
+ 
+
+
+
+
+
+document.addEventListener('keydown', play);
 document.addEventListener('keydown', jump);
