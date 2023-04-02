@@ -1,5 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const nuvens = document.querySelector('.nuvens');
+
 const jump = () => {
 
     mario.classList.add('jump');
@@ -10,23 +12,29 @@ const jump = () => {
 }
 const loop = setInterval(() =>{
     const pipePosition = pipe.offsetLeft;
+    const nuvensPosition = nuvens.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     
     if (pipePosition <= 120  && pipePosition > 0 && marioPosition < 50){
 
-    pipe.style.animation = 'none';
-    pipe.style.left = `${pipePosition}px`;
+        pipe.style.animation = 'none';
+        pipe.style.left = `${pipePosition}px`;
 
-    mario.style.animation = 'none';
-    mario.style.bottom = `${marioPosition}px`;
+        mario.style.animation = 'none';
+        mario.style.bottom = `${marioPosition}px`;
     
-    mario.src = './imagens/over.png';
-    mario.style.width = '150px'
-    mario.style.marginleft = '50px'
+        mario.src = './imagens/over.png';
+        mario.style.width = '150px'
+        mario.style.marginleft = '50px'
+    
+        nuvens.style.animation = 'none';
+        nuvens.style.left = `${nuvensPosition}px`;
+       
 
-        
+        clearInterval(loop);
 
-    clearInterval(loop);
+    
+    
     }
     
     }, 10);

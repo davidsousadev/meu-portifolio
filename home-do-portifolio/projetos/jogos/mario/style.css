@@ -16,7 +16,7 @@
 .nuvens{
     position: absolute;
     width: 200px;
-    animation: clouds 10s infinite linear;
+    animation: clouds 15s infinite linear;
 }
 .pipe{
     position: absolute;
