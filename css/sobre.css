@@ -8,7 +8,7 @@
     animation: sobre 7s ease forwards;
     
   }
-  
+ 
   @keyframes sobre {
     from{
       opacity: 0;
