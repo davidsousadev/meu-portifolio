@@ -1,19 +1,41 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*CSS media query dentro de um stylesheet*/
 @media (max-width: 1000px)
 {
- .dd img{
-  height: 460px;
-  width: 98px;
+ #olhando{
+    height: 200px;
+    width: 98px;
   display: block;
   animation: imagem 7s ease forwards;
   position: absolute;
-  border: #0a59ed 1px solid;
+ margin-top: 100px;
 }
+.google{
+    margin: auto;
+    font-size: 6pt;
+    color:red;
+
+}
+.hard img{
+    display:block;
+    width: 5px;
+    height: 5px;
+}
+
+.soft img{
+    display: block;
+    width: 5px;
+    height: 5px;
+  }
+
+
+
 
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +43,7 @@
    
 }
 body{
-    overflow: hidden;
+    /*overflow: hidden;*/
     animation: gge 15s ease infinite;
     background: linear-gradient(-5deg,  #0a59ed, #d16b3f, #250d06, #2a12c5) no-repeat;
    background-size:1000vw 1000vh;
@@ -138,13 +160,13 @@ h1{
   background: black;
 }
 
-.skils{
+.hard{
   display: inline-block;
   position: absolute;
-  margin-left: 277px;
+  margin-left: 177px;
   margin-top: 15%;
 }
-.skils img{
+.hard img{
   width: 100px;
   height: 100px;
 }
@@ -176,7 +198,7 @@ h1{
 .soft{
   display: inline-block;
   position: absolute;
-  margin-left: 277px;
+  margin-left: 177px;
   margin-top: 30%;
 }
 
