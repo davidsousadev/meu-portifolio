@@ -7,40 +7,39 @@
     <!--https://favicon.io/-->
     <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
     <title>Portifolio Digital</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="cabeca">
-        <nav id="menu-h">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-   
-                <li>
-                    <a href="sobre.html">
-                        Sobre
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="portifolio.html">
-                  Portfólio
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="contatos.html">
-                  Contatos
-                    </a>
-                </li>
-            </ul>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>                    
+                    <li class="nav-item"><a href="#sobre" class="nav-link"> Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
-    </div>
-    <img id="olhando" src="imagens/olhandopronada.png" alt="olhandopronada" />
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>                
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            </ul>
+
+            
+        </div>
+    </header>
+       <img id="olhando" src="imagens/olhandopronada.png" alt="olhandopronada" />
  <div class="dd"> 
  
     <h1>
@@ -53,7 +52,7 @@
             Desenvolvedor: Full-Stack<span class="and">|</span>
            </p>
     </h1>
-
+    
  </div>
    
  <div class="hard">
@@ -74,8 +73,25 @@
     <img id="sqlicon" src="imagens/react.png" alt="react">
     
  </div>
+ <div id="sobre"> 
+    <img id="olhando" src="imagens/perfil.png" alt="perfil" />
+    <div class="txt">
+        <h1>
+            <p class="sobre"> 
+            Sou apaixonado por tecnologia
+            </p>
+            <p class="sobre"> 
+            Desde criança sempre busquei formas de me aproximar <br>de novas tecnologias,  seja através de livros, <br> videos, periféricos e afins. 
+           </p>
+           <p class="sobre"> 
+            Pra mim conseguir meu primeiro computador tive que <br> primeiro aprender a consertar um, logo após ganhei <br> de presente peças (algumas com defeito) e tive que <br> me virar para conseguir realizar meu sonho de ter <br> meu primeiro computador.
+           </p>
+           
+    </h1>
+    </div>
+       
+        <p class="proximo">
+       
 </body>
-<script>
-
-</script>
+<script src="assets/js/script.js"></script>
 </html>
