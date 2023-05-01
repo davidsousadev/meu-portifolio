@@ -52,11 +52,5 @@ myMusic.play();
 
 }
 
- 
-
-
-
-
-
 document.addEventListener('keydown', play);
 document.addEventListener('keydown', jump);
