@@ -12,11 +12,18 @@ window.onscroll = () =>{
             navLinks.forEach(links => {
                 links.classList.remove('ativo');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('ativo');
-            });
+           });
         };
     });
-};
-
-let header = document.querySelector('header');
+    let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
+};
+
+let menuicon = document.querySelector('#menu');
+let navbar = document.querySelector('.navbar');
+
+menuicon.onclick = () =>{
+    menuicon.classList.toggle('bx-x');
+    navbar.classList.toggle('ativo');
+}
