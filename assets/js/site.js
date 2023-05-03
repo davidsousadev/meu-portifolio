@@ -18,6 +18,10 @@ window.onscroll = () =>{
     let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
+
+menuicon.classList.remove('bx-x');
+    navbar.classList.remove('ativo');
+
 };
 
 let menuicon = document.querySelector('#menu');
@@ -27,3 +31,28 @@ menuicon.onclick = () =>{
     menuicon.classList.toggle('bx-x');
     navbar.classList.toggle('ativo');
 }
+
+ScrollReveal({ 
+    //reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+ });
+
+ ScrollReveal().reveal('.home-content, .titulo', { origin: 'top'});
+
+ ScrollReveal().reveal('.perfil, .serv, .portifolio-box', { origin: 'bottom'});
+
+
+ ScrollReveal().reveal('.sobre-img', { origin: 'left'});
+
+ ScrollReveal().reveal('.conteudo-sobre', { origin: 'rigth'});
+
+
+ const typed = new Typed('.multiple-text', {
+    strings: ['Desenvolvedor Full Stack Jr.','Técnico em Informática','Técnico em Contabilidade', 'Auxiliar de Escritório'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+ });
