@@ -15,7 +15,9 @@ body{
     transform: translate(-50%, -50%);
 }
 img{
-   
+   border-radius: 49px;
+background: linear-gradient(145deg, #5fd0d0, #50afaf);
+box-shadow:  14px 14px 43px #367676, -14px -14px 43px #7cffff;
    
 }
 .navega{

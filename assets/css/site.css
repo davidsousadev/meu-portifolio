@@ -113,8 +113,12 @@ span{
 }
 
 .perfil img{
-    width: 32vw;
+    width: 20vw;
     animation: floatImage 10s ease-in-out infinite;
+border-radius: 34px;
+    background: var(--main-color);
+    box-shadow: 7px 7px 7px #3a7e7e,
+    -7px -7px 7px #78ffff;
 }
 
 @keyframes floatImage {
