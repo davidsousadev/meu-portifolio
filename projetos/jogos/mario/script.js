@@ -2,6 +2,8 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const nuvens = document.querySelector('.nuvens');
 
+const up = document.querySelector('.up');
+
 const jump = () => {
 
     mario.classList.add('jump');
@@ -15,7 +17,7 @@ const loop = setInterval(() =>{
     const nuvensPosition = nuvens.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     
-    if (pipePosition <= 120  && pipePosition > 0 && marioPosition < 50){
+    if (pipePosition <= 110  && pipePosition > 0 && marioPosition < 5){
 
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
@@ -46,11 +48,12 @@ myMusic.pause();
 
 var myMusic = document.getElementById("music");
 var over = document.getElementById("over");
-function play() {
+
+function play(){
 
 myMusic.play();
 
 }
 
-document.addEventListener('keydown', play);
-document.addEventListener('keydown', jump);
+document.addEventListener("unload", play);
+//document.addEventListener('up', jump);
