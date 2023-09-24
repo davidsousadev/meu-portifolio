@@ -51,8 +51,8 @@ ScrollReveal({
 
  const typed = new Typed('.multiple-text', {
     strings: ['Desenvolvedor Full Stack Jr.', 'Técnico em Desenvolvimento de Sistemas','Técnico em Informática','Técnico em Contabilidade', 'Auxiliar de Escritório'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 500,
     loop: true
  });

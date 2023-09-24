@@ -254,7 +254,7 @@ border-radius: 34px;
 }
 
 .serv p{
-    font-size: 1.6;
+    font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
@@ -340,9 +340,102 @@ background: var(--second-bg-color);
     color: var(--second-bg-color);
 }
 .habilidades{
-    background: var(--second-bg-color);
-    
+    background: var(--second-bg-color); 
 }
+/*
+.skils-box i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 14rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease-in-out;
+}
+*/
+svg circle {
+    fill: none;
+    stroke: var(--text-color);
+    stroke-width: 3;
+    stroke-linecap: round;
+    transform: translate(3px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+
+svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: var(--main-color);
+
+}
+.percent:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke: var(--main-color);
+
+}
+
+.percent:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);stroke: var(--main-color);
+}
+.percent:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+    stroke: var(--main-color);
+
+}
+.percent:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 20) / 100);
+    stroke: var(--main-color);
+
+}
+.percent {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /*box-shadow: inset 0 0 50px #000;*/
+    z-index: 1000;
+    margin: 10px;
+    transition: .5s ease-in-out;
+
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2 {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 150px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
 
 .footer{
     display: flex;
