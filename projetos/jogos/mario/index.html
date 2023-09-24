@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="imagens/icon-mario.jpg">
     <link rel="stylesheet" href="style.css">
-   
+   <script src="script.js" defer></script>
     <title>Mario</title>
 </head>
-<body>
+<body onunload="play()" 
+onload="play()"
+unload="play()">
     <div class="game-board">
-        <img src="imagens/clouds.png" class="nuvens">
+        <img onclick="play()" src="imagens/clouds.png" class="nuvens">
         <img src="imagens/mario.gif" alt="" class="mario jump">
         <img src="imagens/pipe.gif" alt="" class="pipe">
      
@@ -25,6 +27,10 @@
     Your browser does not support the audio element.
 </audio>
 <a href="../../../index.html" target="_blank" rel="noopener noreferrer"></a>
+	  <a class="up arr" onclick="jump()">
+	    <i class="chevron up"></i></a>
+	  <br />
+
 </body>
 <script src="script.js" defer></script>
 </html>
