@@ -116,9 +116,9 @@ span{
     width: 20vw;
     animation: floatImage 10s ease-in-out infinite;
 border-radius: 34px;
-    background: var(--main-color);
+    /*background: var(--main-color);
     box-shadow: 7px 7px 7px #3a7e7e,
-    -7px -7px 7px #78ffff;
+    -7px -7px 7px #78ffff;*/
 }
 
 @keyframes floatImage {
@@ -175,13 +175,26 @@ border-radius: 34px;
 .btn:hover{
     box-shadow:none;
 }
-
-.bx-mouse{
-    border-radius: .8rem;
-    font-size: 3rem; 
+#mouse{
+    font-size: 7rem;
+    margin-left: 80%;
     float: right;
+    align-items: center;
+    color: var(--main-color);
+    display: block;
+    margin-top: 350px;
+    position: absolute;
 }
-
+#mouse .bx-mouse{
+    color: var(--text-color); 
+    display: block; 
+}
+#mouse .bx-dots-vertical-rounded{
+    margin-top: -15px;
+    padding: 0;
+   
+    display: block;
+}
 .sobre{
     display: flex;
     justify-content: center;
@@ -473,9 +486,15 @@ svg circle:nth-child(2) {
     html{
         font-size: 50%;
     }
+    #mouse{
+        display: none;
+    }
 }
 
 @media (max-width: 991px){
+    #mouse{
+        display: none;
+    }
     .header{
         padding: 2rem 3%;
     }
@@ -542,6 +561,9 @@ svg circle:nth-child(2) {
     .perfil img{
         width: 70vw;
         margin-top: 4rem;
+    }
+    #mouse{
+        display: none;
     }
     .sobre{
         flex-direction: column-reverse;
