@@ -1,4 +1,11 @@
+.square,
+.square:hover{
+    cursor: url("../imagens/marreta.png"), auto;
+}
+
+
 .conteiner{
+    
     display: flex;
     flex-direction: column;
     height: 100vh;
