@@ -1,5 +1,28 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+const body = document.querySelector('body');
+const sobre = document.querySelector('.sobre');
+const experiencias = document.querySelector('.experiencias');
+const portifolio = document.querySelector('.portifolio');
+const habilidades = document.querySelector('.habilidades');
+const footer = document.querySelector('.footer');
+
+const flight = () =>{
+    body.classList.add('bg');
+    sobre.classList.add('bg');
+    experiencias.classList.add('bg');
+    portifolio.classList.add('bg');
+    habilidades.classList.add('bg');
+    footer.classList.remove('bg');
+}
+const fdark = () =>{
+    body.classList.remove('bg');
+    sobre.classList.remove('bg');
+    experiencias.classList.remove('bg');
+    portifolio.classList.remove('bg');
+    habilidades.classList.remove('bg');
+    footer.classList.remove('bg');
+}
 
 window.onscroll = () =>{
     sections.forEach(sec => {

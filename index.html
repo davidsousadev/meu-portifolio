@@ -12,11 +12,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+    
 </head>
 <body>
+    
+
+   <section class="home" id="home">
     <header class="header">
         <a class="logo" href="#">DS</a>
-
         <i class='bx bx-menu' id="menu"></i>
         <nav class="navbar">
             <a href="#home" class="ativo">Início</a>
@@ -24,15 +28,18 @@
             <a href="#experiencias">Experiências</a>
             <a href="#portifolio">Portifólio</a>
             <a href="#formacao">Formação</a>
-            <a href="#habilidades">Habilidades</a>     
+            <a href="#habilidades">Habilidades</a>  
+            <!-- Dark/Light mode -->
+            <a class="light" type="checkbox" onclick="flight()">O</a>
+            <a class="dark" type="checkbox" onclick="fdark()">x</a>   
         </nav>
+        
+        
     </header>
-
-   <section class="home" id="home">
     <div class="home-content">
         <h3> Olá, Sou</h3>
         <h1>David Sousa</h1>
-        <h3><span class="multiple-text"></span> </h3>
+        <h3><span class="multiple-text"></span></h3>
         <p>Este site é para compartilhar todos os meus projetos em andamento e futuros. <br />Me siga nas redes sociais abaixo.
             </p>
     <div class="social">
@@ -157,8 +164,38 @@
    </section>
    <section class="formacao" id="formacao">
     <h2 class="titulo">Minha &nbsp; <span>Formação</span></h2>
-    <div class="formacao-conteiner">rr
+    <div class="formacao-conteiner">
         <div class="formacao-box">
+            <ul>
+                <li>
+                    <p>
+                    Técnico em Informática
+                    </p>
+                    <details>
+                        Período: 1 ano e meio (2014 - 2016)
+                    </details>
+            </li>
+                <li>
+                    <p>
+                        Técnico em Contabilidade - Período: 1 ano e meio (2021 - 2022)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Técnico em Desenvolvimento de Sistemas - Período: 1 ano e meio (2023 - Atualmente)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Licenciatura em Computação - Período: 4 anos (2023 - Atualmente)
+                    </p>
+                </li>
+                <li>
+                    <p>
+
+                    </p>
+                </li>
+            </ul>
             
             </div>
         </div>
@@ -226,5 +263,5 @@
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-<script src="assets/js/site.js"></script>
+<script src="assets/js/site.js" defer></script>
 </html>
