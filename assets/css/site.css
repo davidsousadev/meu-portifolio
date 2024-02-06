@@ -186,13 +186,12 @@ border-radius: 34px;
     position: absolute;
 }
 #mouse .bx-mouse{
-    color: var(--text-color); 
+    color: var(--second-bg-color); 
     display: block; 
 }
 #mouse .bx-dots-vertical-rounded{
     margin-top: -15px;
     padding: 0;
-   
     display: block;
 }
 .sobre{
@@ -472,8 +471,9 @@ svg circle:nth-child(2) {
     background: var(--bg-color);
 }
 
-.footer-text p{
+.footer-text>p{
     font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 .footer-iconTop a {

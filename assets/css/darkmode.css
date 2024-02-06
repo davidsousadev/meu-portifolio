@@ -6,4 +6,14 @@ button{
 	color: #1f242d;
 	background-color: white;
 }
+.fmouse>.bx-mouse{
+	color: #1f242d;
+}
 
+.light>i{
+	color: rgb(255, 255, 4);
+}
+
+.dark>i{
+	color: rgb(72, 81, 212);
+}

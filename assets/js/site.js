@@ -6,6 +6,7 @@ const experiencias = document.querySelector('.experiencias');
 const portifolio = document.querySelector('.portifolio');
 const habilidades = document.querySelector('.habilidades');
 const footer = document.querySelector('.footer');
+const mouse = document.querySelector('.mouse');
 
 const flight = () =>{
     body.classList.add('bg');
@@ -14,6 +15,7 @@ const flight = () =>{
     portifolio.classList.add('bg');
     habilidades.classList.add('bg');
     footer.classList.remove('bg');
+    mouse.classList.add('fmouse');
 }
 const fdark = () =>{
     body.classList.remove('bg');
@@ -22,6 +24,7 @@ const fdark = () =>{
     portifolio.classList.remove('bg');
     habilidades.classList.remove('bg');
     footer.classList.remove('bg');
+    mouse.classList.remove('fmouse');
 }
 
 window.onscroll = () =>{
