@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Busca de Pokémon</title>
+    </head>
+    <body>
+      <h1>Busca de Pokémon</h1>
+    
+      <label for="pokemonInput">Nome ou Número do Pokémon:</label>
+      <input type="text" id="pokemonInput" placeholder="Digite o nome ou número">
+      <button onclick="buscarPokemon()">Buscar Pokémon</button>
+    
+      <div id="pokemonInfo">
+        <!-- As informações do Pokémon serão exibidas aqui -->
+      </div>
+    
+      <script>
+        async function buscarPokemon() {
+          const pokemonInput = document.getElementById('pokemonInput');
+          const pokemonNameOrNumber = pokemonInput.value.toLowerCase();
+    
+          // Verifica se o input é um número ou um nome
+          const apiUrl = isNaN(pokemonNameOrNumber)
+            ? `https://pokeapi.co/api/v2/pokemon/${pokemonNameOrNumber}/`
+            : `https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonNameOrNumber, 10)}/`;
+    
+          try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+    
+            // Exibe as informações na página
+            const pokemonInfoDiv = document.getElementById('pokemonInfo');
+            pokemonInfoDiv.innerHTML = `
+              <p>Nome: ${data.name}</p>
+              <p>ID: ${data.id}</p>
+              <p>Altura: ${data.height}</p>
+              <p>Peso: ${data.weight}</p>
+              <img width="200px" height="200px" src="${data.sprites.front_default}" alt="Imagem do Pokémon">
+            `;
+          } catch (error) {
+            console.error('Erro ao buscar informações do Pokémon:', error);
+            const pokemonInfoDiv = document.getElementById('pokemonInfo');
+            pokemonInfoDiv.innerHTML = `<p>Nenhum Pokémon encontrado com o nome ou número: ${pokemonNameOrNumber}</p>`;
+          }
+        }
+      </script>
+    </body>
+    </html>
+    

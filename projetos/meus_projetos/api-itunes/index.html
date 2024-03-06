@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consulta iTunes API</title>
+        <link rel="stylesheet" href="src/styles/style.css">
+        <style>
+            body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+#conteiner{
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+}
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado h2 {
+    color: #333;
+}
+
+#resultado p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#resultado img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+audio {
+    margin-top: 10px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div id="conteiner">
+        <h1>Consulta iTunes API</h1>
+        
+        <label for="searchTerm">Termo de Pesquisa:</label>
+        <input type="text" id="searchTerm" placeholder="Insira o termo de pesquisa">
+        <button onclick="buscarMusica()">Buscar Música</button>
+    
+        <div id="resultado"></div>
+    
+        <script>
+            function buscarMusica() {
+                // Obter o termo de pesquisa inserido pelo usuário
+                var termoDePesquisa = document.getElementById("searchTerm").value;
+    
+                // Construir a URL da API do iTunes com o termo de pesquisa
+                var url = `https://itunes.apple.com/search?entity=song&limit=1&term=${termoDePesquisa}&callback=processarResposta`;
+    
+                // Adicionar uma função de retorno de chamada global
+                window.processarResposta = function(resposta) {
+                    // Exibir informações sobre a primeira música (se houver)
+                    if (resposta.results.length > 0) {
+                        var musica = resposta.results[0];
+                        var resultadoDiv = document.getElementById("resultado");
+                        resultadoDiv.innerHTML = `
+                            <h2>${musica.trackName}</h2>
+                            <p>Artista: ${musica.artistName}</p>
+                            <p>Álbum: ${musica.collectionName}</p>
+                            <img src="${musica.artworkUrl100}" alt="Capa do Álbum">
+                            <br />
+                            <audio controls>
+                                <source src="${musica.previewUrl}" type="audio/mp4">
+                                Seu navegador não suporta a tag de áudio.
+                            </audio>
+                            <br />
+                        `;
+                    } else {
+                        // Se nenhuma música for encontrada
+                        document.getElementById("resultado").innerHTML = "Nenhuma música encontrada.";
+                    }
+                };
+   
+                // Adicionar um script dinâmico para a página
+                var script = document.createElement("script");
+                script.src = url;
+                document.body.appendChild(script);
+            }
+        </script>
+        </div>
+        <!-- <a href="http://david-ds.rf.gd/?i=1">Server 1</a>
+        <a href="https://sistemas-web-david.000webhostapp.com/">Server 2</a> -->
+    </body>
+    </html>
