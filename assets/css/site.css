@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     font-family:'Poppins', sans-serif;
     font-size: 80%;
+    
 }
 
 
@@ -23,12 +24,13 @@
 
 html{
     font-size: 62,5%;
-    overflow-x: hidden;
+    
 }
 
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    
 }
 section{
     min-height: 100vh;
