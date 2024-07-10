@@ -21,6 +21,17 @@
     --main-color:#0ef;
 
 }
+/*Ajustes*/
+
+.experiencias,
+#esperiencias,
+.habilidades,
+.formacao,
+.projetos,
+.portifolio
+{
+    display: none;
+}
 
 html{
     font-size: 62,5%;
@@ -242,6 +253,7 @@ border-radius: 34px;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    
 }
 
 
