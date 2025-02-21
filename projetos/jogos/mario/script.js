@@ -56,4 +56,6 @@ myMusic.play();
 }
 
 document.addEventListener("unload", play);
-//document.addEventListener('up', jump);
+document.addEventListener('up', jump);
+
+export {};

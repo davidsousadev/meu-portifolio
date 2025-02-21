@@ -1,0 +1,128 @@
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+    #mouse{
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+    #mouse{
+        display: none;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .servicos{
+        padding-bottom: 7rem;
+    }
+    .portifolio{
+        padding-bottom: 7rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+    .navbar a:hover
+{
+    background: none;
+    color: var(--main-color);
+    border-radius: none;
+    box-shadow: none;
+} 
+.navbar a.ativo{
+    background: none;
+    color: var(--main-color);
+    border-radius: none;
+    box-shadow: none;
+}
+    .navbar.ativo{
+        background: var(--second-bg-color);
+        display: block;
+    }
+    .navbar a{
+        display:block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .perfil img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    #mouse{
+        display: none;
+    }
+    .sobre{
+        flex-direction: column-reverse;
+    }
+    .sobre img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .experiencias{
+        margin-bottom: 3rem;
+    }
+    .portifolio h2{
+        margin-bottom: 3rem;
+    }
+    .portifolio-conteiner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px){
+    .portifolio-conteiner{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 365px){
+    .perfil img{
+        width: 90vw;
+    }
+    .sobre-img img{
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

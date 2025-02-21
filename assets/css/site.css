@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -26,9 +27,7 @@
 .experiencias,
 #esperiencias,
 .habilidades,
-.formacao,
-.projetos,
-.portifolio
+.formacao
 {
     display: none;
 }
@@ -293,89 +292,6 @@ border-radius: 34px;
     margin: 1rem 0 3rem;
 }
 
-.portifolio{
-background: var(--second-bg-color);
-}
-
-.portifolio h2{
-    margin-bottom: 2rem;
-    margin-top: -5rem;
-}
-
-.portifolio-conteiner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.portifolio-conteiner .portifolio-box{
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
-}
-
-.portifolio-box img{
-    width: 100%;
-    height: 200px;
-    transition: .5s ease;
-}
-
-.portifolio-box:hover img{
-    transform: scale(1.1);
-}
-.portifolio-box .player{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.portifolio-box:hover .player{
-    transform: translateY(0);
-}
-
-.player .btn{
-    background: none;
-    box-shadow: none;
-}
-
-
-.player h4{
-    font-size: 2rem;
-}
-
-.player p{
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.player a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--text-color);
-    border-radius: 50%;
-}
-
-.player a i{
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
 .formacao>.titulo{
     margin-top: -70px;
    
@@ -563,131 +479,3 @@ svg circle:nth-child(2) {
     color: var(--second-bg-color);
 }
 
-@media (max-width: 1200px){
-    html{
-        font-size: 50%;
-    }
-    #mouse{
-        display: none;
-    }
-}
-
-@media (max-width: 991px){
-    #mouse{
-        display: none;
-    }
-    .header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .servicos{
-        padding-bottom: 7rem;
-    }
-    .portifolio{
-        padding-bottom: 7rem;
-    }
-    .footer{
-        padding: 2rem 3%;
-    }
-}
-
-@media (max-width: 768px){
-    #menu{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-        display: none;
-    }
-    .navbar a:hover
-{
-    background: none;
-    color: var(--main-color);
-    border-radius: none;
-    box-shadow: none;
-} 
-.navbar a.ativo{
-    background: none;
-    color: var(--main-color);
-    border-radius: none;
-    box-shadow: none;
-}
-    .navbar.ativo{
-        background: var(--second-bg-color);
-        display: block;
-    }
-    .navbar a{
-        display:block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .home{
-        flex-direction: column;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .perfil img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    #mouse{
-        display: none;
-    }
-    .sobre{
-        flex-direction: column-reverse;
-    }
-    .sobre img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .experiencias{
-        margin-bottom: 3rem;
-    }
-    .portifolio h2{
-        margin-bottom: 3rem;
-    }
-    .portifolio-conteiner{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 617px){
-    .portifolio-conteiner{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 365px){
-    .perfil img{
-        width: 90vw;
-    }
-    .sobre-img img{
-        width: 90vw;
-    }
-    .footer{
-        flex-direction: column-reverse;
-    }
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
-    }
-}
