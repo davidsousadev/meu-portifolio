@@ -14,7 +14,7 @@ export const flight = () => {
     body.classList.add('bg');
     sobre.classList.add('bg');
     experiencias.classList.add('bg');
-    portifolio.classList.add('bg');
+    portifolio.classList.remove('bg');
     habilidades.classList.add('bg');
     footer.classList.remove('bg');
     mouse.classList.add('fmouse');
@@ -24,7 +24,7 @@ export const fdark = () => {
     body.classList.remove('bg');
     sobre.classList.remove('bg');
     experiencias.classList.remove('bg');
-    portifolio.classList.remove('bg');
+    portifolio.classList.add('bg');
     habilidades.classList.remove('bg');
     footer.classList.remove('bg');
     mouse.classList.remove('fmouse');
