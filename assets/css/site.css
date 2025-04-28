@@ -158,10 +158,10 @@ border-radius: 34px;
     height: 4rem;
     background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
+    border-radius: 25%;
+    font-size: 2.5rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem .7rem 3rem 0;
     transition: .5s ease;
 }
 
@@ -182,6 +182,7 @@ border-radius: 34px;
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    padding: 1rem 4rem 1rem 4rem;
 }
 
 .btn:hover{
