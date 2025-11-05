@@ -150,6 +150,12 @@ border-radius: 34px;
     font-size: 1.6rem;
 }
 
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social a{
     display: inline-flex;
     justify-content: center;
@@ -172,8 +178,10 @@ border-radius: 34px;
 }
 
 .btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 7rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
