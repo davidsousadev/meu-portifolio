@@ -20,7 +20,7 @@
     .servicos{
         padding-bottom: 7rem;
     }
-    .portifolio{
+    .portfolio{
         padding-bottom: 7rem;
     }
     .footer{
@@ -91,16 +91,16 @@
     .experiencias{
         margin-bottom: 3rem;
     }
-    .portifolio h2{
+    .portfolio h2{
         margin-bottom: 3rem;
     }
-    .portifolio-conteiner{
+    .portfolio-conteiner{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 617px){
-    .portifolio-conteiner{
+    .portfolio-conteiner{
         grid-template-columns: 1fr;
     }
 }

@@ -1,13 +1,13 @@
-.portifolio {
+.portfolio {
     background: var(--second-bg-color);
 }
 
-.portifolio h2 {
+.portfolio h2 {
     margin-bottom: 2rem;
     margin-top: -5rem;
 }
 
-.portifolio-conteiner {
+.portfolio-conteiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -16,7 +16,7 @@
     
 }
 
-.portifolio-conteiner .portifolio-box {
+.portfolio-conteiner .portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -27,12 +27,12 @@
     transition: .5s ease;
 }
 
-.portifolio-box img,iframe {
+.portfolio-box img,iframe {
     width: 100%;
     height: 300px;
     transition: .5s ease;
 }
-.portifolio-box .tech {
+.portfolio-box .tech {
     display: block;
     z-index: 10;
     position: absolute;
@@ -46,11 +46,11 @@
     font-weight: 500;
     transition: .5s ease;
 }
-.portifolio-box:hover img {
+.portfolio-box:hover img {
     transform: scale(1.1);
 }
 
-.portifolio-box .player {
+.portfolio-box .player {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,7 +72,7 @@
     color: var(--second-bg-color);
 }
 
-.portifolio-box:hover .player {
+.portfolio-box:hover .player {
     transform: translateY(0);
 }
 

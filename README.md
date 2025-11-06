@@ -1,6 +1,6 @@
 # meu-portfolio
 
-Meu portfólio pessoal.
+Meu Portfólio Pessoal.
 
 ## Sobre
 
@@ -14,7 +14,7 @@ Você pode visualizar o site abrindo o arquivo `index.html` no navegador ou hosp
 
 - `index.html` — página inicial
 - `sobre.html` — sobre / biografia
-- `portifolio.html` — projetos e exemplos
+- `portfolio.html` — projetos e exemplos
 - `contatos.html` (em `li/contatos.html`) — informações de contato
 - Outras páginas: `habilidades.html`, `formacao.html`, `experiencias.html`
 

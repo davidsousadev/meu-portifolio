@@ -4,7 +4,7 @@ export const navLinks = document.querySelectorAll('header nav a');
 export const body = document.querySelector('body');
 export const sobre = document.querySelector('.sobre');
 export const experiencias = document.querySelector('.experiencias');
-export const portifolio = document.querySelector('.portifolio');
+export const portfolio = document.querySelector('.portfolio');
 export const habilidades = document.querySelector('.habilidades');
 export const footer = document.querySelector('.footer');
 export const mouse = document.querySelector('.mouse');
@@ -14,7 +14,7 @@ export const flight = () => {
     body.classList.add('bg');
     sobre.classList.add('bg');
     experiencias.classList.add('bg');
-    portifolio.classList.remove('bg');
+    portfolio.classList.remove('bg');
     habilidades.classList.add('bg');
     footer.classList.remove('bg');
     mouse.classList.add('fmouse');
@@ -24,7 +24,7 @@ export const fdark = () => {
     body.classList.remove('bg');
     sobre.classList.remove('bg');
     experiencias.classList.remove('bg');
-    portifolio.classList.add('bg');
+    portfolio.classList.add('bg');
     habilidades.classList.remove('bg');
     footer.classList.remove('bg');
     mouse.classList.remove('fmouse');
@@ -67,7 +67,7 @@ export const setupScrollReveal = () => {
     });
 
     ScrollReveal().reveal('.home-content, .titulo', { origin: 'top' });
-    ScrollReveal().reveal('.perfil, .serv, .portifolio-box', { origin: 'bottom' });
+    ScrollReveal().reveal('.perfil, .serv, .portfolio-box', { origin: 'bottom' });
     ScrollReveal().reveal('.sobre-img', { origin: 'left' });
     ScrollReveal().reveal('.conteudo-sobre', { origin: 'rigth' });
 }

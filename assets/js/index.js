@@ -5,7 +5,7 @@ import {
     body, 
     sobre, 
     experiencias, 
-    portifolio, 
+    portfolio, 
     habilidades, 
     footer, 
     mouse, 
@@ -24,7 +24,7 @@ window.navLinks = navLinks;
 window.body = body;
 window.sobre = sobre;
 window.experiencias = experiencias;
-window.portifolio = portifolio;
+window.portfolio = portfolio;
 window.habilidades = habilidades;
 window.footer = footer;
 window.mouse = mouse;

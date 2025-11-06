@@ -8,7 +8,7 @@ function loadHTML(filename, elementId) {
     }
     loadHTML('home.html', 'home');
     loadHTML('sobre.html', 'sobre');
-    loadHTML('portifolio.html', 'portifolio');
+    loadHTML('portfolio.html', 'portfolio');
     loadHTML('footer.html', 'footer');
 
 export { loadHTML };
